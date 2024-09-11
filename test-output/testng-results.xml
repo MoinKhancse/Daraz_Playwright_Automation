@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-11T23:57:20 BDT" name="Default suite" finished-at="2024-09-11T23:58:29 BDT" duration-ms="68933">
+    <groups>
+    </groups>
+    <test started-at="2024-09-11T23:57:20 BDT" name="Default test" finished-at="2024-09-11T23:58:29 BDT" duration-ms="68933">
+      <class name="Playwright_Automation.StartChromBrowser">
+        <test-method is-config="true" signature="start()[pri:0, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:57:05 BDT" name="start" finished-at="2024-09-11T23:57:20 BDT" duration-ms="14303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="openUrl()[pri:0, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:57:20 BDT" name="openUrl" finished-at="2024-09-11T23:57:49 BDT" duration-ms="29098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="getTitle()[pri:1, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:57:49 BDT" name="getTitle" finished-at="2024-09-11T23:57:51 BDT" duration-ms="2018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitle -->
+        <test-method signature="getUrl()[pri:2, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:57:51 BDT" name="getUrl" finished-at="2024-09-11T23:57:53 BDT" duration-ms="2005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrl -->
+        <test-method signature="scroll()[pri:3, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:57:53 BDT" name="scroll" finished-at="2024-09-11T23:58:08 BDT" duration-ms="15255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scroll -->
+        <test-method signature="scrolDown()[pri:4, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:58:08 BDT" name="scrolDown" finished-at="2024-09-11T23:58:18 BDT" duration-ms="10024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrolDown -->
+        <test-method signature="login()[pri:5, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:58:18 BDT" name="login" finished-at="2024-09-11T23:58:29 BDT" duration-ms="10435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:58:29 BDT" name="close" finished-at="2024-09-11T23:58:29 BDT" duration-ms="413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Playwright_Automation.StartChromBrowser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
