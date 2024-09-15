@@ -2,6 +2,7 @@ package Playwright_Automation;
 
 
 import java.nio.file.Paths;
+import java.util.List;
 
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -24,9 +25,9 @@ public class FindLocator {
 	public void start() {
 		playwright = Playwright.create();
 		browserType = playwright.chromium();
-		browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false));
-		browserContext = browser.newContext(new Browser.NewContextOptions());
-		driver = browser.newPage();
+		browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false).setArgs(List.of("--start-maximized")));
+		browserContext = browser.newContext(new Browser.NewContextOptions().setViewportSize(null));
+		driver = browserContext.newPage();
 		
 		System.out.println("Version : "+browser.version());
 	}
@@ -93,6 +94,8 @@ public class FindLocator {
 		login.click();
 		Thread.sleep(5000);
 		
+	}@Test(priority=3)
+	public void login() throws InterruptedException {
 		ElementHandle login_email = driver.querySelector("//input[@id='email']");
 		login_email.fill("moinkhan4363@gmail.com");
 		Thread.sleep(5000);
@@ -104,6 +107,34 @@ public class FindLocator {
 		ElementHandle click_login = driver.querySelector("//input[@value='Login']");
 		click_login.click();
 		Thread.sleep(5000);
+		
+		ElementHandle Windows = driver.querySelector("//button[normalize-space()='Alerts, Frames & Windows']");
+		Windows.click();
+		Thread.sleep(5000);
+		
+		ElementHandle Alerts = driver.querySelector("//a[normalize-space()='Alerts']");
+		Alerts.click();
+		Thread.sleep(5000);
+		
+	}
+	@Test(priority = 4)
+	public void alert() throws InterruptedException {
+		driver.onceDialog(dialog->{
+			System.out.println("Dialog Type :"+dialog.type());
+			System.out.println("Dialog Message :"+dialog.message());
+			
+			dialog.dismiss();
+			
+		});
+		ElementHandle myDesk = driver.querySelector("//button[@onclick='myDesk()']");
+		myDesk.click();
+		Thread.sleep(3000);
+		
+		ElementHandle myPromp = driver.querySelector("//button[@onclick='myPromp()']");
+		myPromp.click();
+		Thread.sleep(5000);
+		myPromp.fill("Moin Khan");
+		Thread.sleep(3000);
 	}
 	@AfterSuite
 	public void close() {

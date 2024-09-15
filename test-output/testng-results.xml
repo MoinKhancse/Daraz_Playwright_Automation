@@ -1,45 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-11T23:57:20 BDT" name="Default suite" finished-at="2024-09-11T23:58:29 BDT" duration-ms="68933">
+  <suite started-at="2024-09-15T17:51:59 BDT" name="Default suite" finished-at="2024-09-15T17:53:42 BDT" duration-ms="103431">
     <groups>
     </groups>
-    <test started-at="2024-09-11T23:57:20 BDT" name="Default test" finished-at="2024-09-11T23:58:29 BDT" duration-ms="68933">
-      <class name="Playwright_Automation.StartChromBrowser">
-        <test-method is-config="true" signature="start()[pri:0, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:57:05 BDT" name="start" finished-at="2024-09-11T23:57:20 BDT" duration-ms="14303" status="PASS">
+    <test started-at="2024-09-15T17:51:59 BDT" name="Default test" finished-at="2024-09-15T17:53:42 BDT" duration-ms="103431">
+      <class name="Playwright_Automation.FindLocator">
+        <test-method is-config="true" signature="start()[pri:0, instance:Playwright_Automation.FindLocator@293a5bf6]" started-at="2024-09-15T17:51:46 BDT" name="start" finished-at="2024-09-15T17:51:59 BDT" duration-ms="12801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="openUrl()[pri:0, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:57:20 BDT" name="openUrl" finished-at="2024-09-11T23:57:49 BDT" duration-ms="29098" status="PASS">
+        <test-method signature="openUrl()[pri:0, instance:Playwright_Automation.FindLocator@293a5bf6]" started-at="2024-09-15T17:51:59 BDT" name="openUrl" finished-at="2024-09-15T17:52:06 BDT" duration-ms="6847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="getTitle()[pri:1, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:57:49 BDT" name="getTitle" finished-at="2024-09-11T23:57:51 BDT" duration-ms="2018" status="PASS">
+        <test-method signature="getTitle()[pri:1, instance:Playwright_Automation.FindLocator@293a5bf6]" started-at="2024-09-15T17:52:06 BDT" name="getTitle" finished-at="2024-09-15T17:52:06 BDT" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTitle -->
-        <test-method signature="getUrl()[pri:2, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:57:51 BDT" name="getUrl" finished-at="2024-09-11T23:57:53 BDT" duration-ms="2005" status="PASS">
+        <test-method signature="locator()[pri:2, instance:Playwright_Automation.FindLocator@293a5bf6]" started-at="2024-09-15T17:52:06 BDT" name="locator" finished-at="2024-09-15T17:53:07 BDT" duration-ms="61486" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUrl -->
-        <test-method signature="scroll()[pri:3, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:57:53 BDT" name="scroll" finished-at="2024-09-11T23:58:08 BDT" duration-ms="15255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scroll -->
-        <test-method signature="scrolDown()[pri:4, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:58:08 BDT" name="scrolDown" finished-at="2024-09-11T23:58:18 BDT" duration-ms="10024" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scrolDown -->
-        <test-method signature="login()[pri:5, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:58:18 BDT" name="login" finished-at="2024-09-11T23:58:29 BDT" duration-ms="10435" status="PASS">
+        </test-method> <!-- locator -->
+        <test-method signature="login()[pri:3, instance:Playwright_Automation.FindLocator@293a5bf6]" started-at="2024-09-15T17:53:07 BDT" name="login" finished-at="2024-09-15T17:53:34 BDT" duration-ms="26794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Playwright_Automation.StartChromBrowser@7d8995e]" started-at="2024-09-11T23:58:29 BDT" name="close" finished-at="2024-09-11T23:58:29 BDT" duration-ms="413" status="PASS">
+        <test-method signature="alert()[pri:4, instance:Playwright_Automation.FindLocator@293a5bf6]" started-at="2024-09-15T17:53:34 BDT" name="alert" finished-at="2024-09-15T17:53:42 BDT" duration-ms="8200" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Error: Element is not an <input>, <textarea> or [contenteditable] element
+  name='Error
+  stack='Error: Error: Element is not an <input>, <textarea> or [contenteditable] element
+    at CRExecutionContext.evaluateWithArguments (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\javascript.js:242:12)
+    at async ElementHandle.evaluateInUtility (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:126:14)
+    at async C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:534:22
+    at async ElementHandle._retryAction (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:266:22)
+    at async ElementHandle._fill (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:531:12)
+    at async C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:525:22
+    at async ProgressController.run (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\progress.js:82:22)
+    at async ElementHandleDispatcher.fill (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dispatchers\elementHandlerDispatcher.js:142:12)
+}
+Call log:
+-   fill("Moin Khan")
+- attempting fill action
+-   waiting for element to be visible, enabled and editable
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Error: Element is not an <input>, <textarea> or [contenteditable] element
+  name='Error
+  stack='Error: Error: Element is not an <input>, <textarea> or [contenteditable] element
+    at CRExecutionContext.evaluateWithArguments (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\javascript.js:242:12)
+    at async ElementHandle.evaluateInUtility (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:126:14)
+    at async C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:534:22
+    at async ElementHandle._retryAction (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:266:22)
+    at async ElementHandle._fill (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:531:12)
+    at async C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:525:22
+    at async ProgressController.run (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\progress.js:82:22)
+    at async ElementHandleDispatcher.fill (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dispatchers\elementHandlerDispatcher.js:142:12)
+}
+Call log:
+-   fill("Moin Khan")
+- attempting fill action
+-   waiting for element to be visible, enabled and editable
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.ElementHandleImpl.fillImpl(ElementHandleImpl.java:194)
+at com.microsoft.playwright.impl.ElementHandleImpl.lambda$fill$10(ElementHandleImpl.java:185)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.ElementHandleImpl.fill(ElementHandleImpl.java:185)
+at com.microsoft.playwright.ElementHandle.fill(ElementHandle.java:1612)
+at Playwright_Automation.FindLocator.alert(FindLocator.java:136)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Error: Element is not an <input>, <textarea> or [contenteditable] element
+  name='Error
+  stack='Error: Error: Element is not an <input>, <textarea> or [contenteditable] element
+    at CRExecutionContext.evaluateWithArguments (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\javascript.js:242:12)
+    at async ElementHandle.evaluateInUtility (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:126:14)
+    at async C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:534:22
+    at async ElementHandle._retryAction (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:266:22)
+    at async ElementHandle._fill (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:531:12)
+    at async C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:525:22
+    at async ProgressController.run (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\progress.js:82:22)
+    at async ElementHandleDispatcher.fill (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dispatchers\elementHandlerDispatcher.js:142:12)
+}
+Call log:
+-   fill("Moin Khan")
+- attempting fill action
+-   waiting for element to be visible, enabled and editable
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alert -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Playwright_Automation.FindLocator@293a5bf6]" started-at="2024-09-15T17:53:42 BDT" name="close" finished-at="2024-09-15T17:53:43 BDT" duration-ms="294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- Playwright_Automation.StartChromBrowser -->
+      </class> <!-- Playwright_Automation.FindLocator -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\benny\AppData\Local\Temp\testng-eclipse--2104223414\testng-customsuite.xml</span>
+                    <span>C:\Users\benny\AppData\Local\Temp\testng-eclipse--371652055\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Playwright_Automation.FindLocator" class="method navigator-link" hash-for-method="alert">alert</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,32 +117,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Playwright_Automation.StartChromBrowser" class="method navigator-link" hash-for-method="getTitle">getTitle</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Playwright_Automation.FindLocator" class="method navigator-link" hash-for-method="getTitle">getTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Playwright_Automation.StartChromBrowser" class="method navigator-link" hash-for-method="getUrl">getUrl</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Playwright_Automation.FindLocator" class="method navigator-link" hash-for-method="locator">locator</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Playwright_Automation.StartChromBrowser" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Playwright_Automation.FindLocator" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Playwright_Automation.StartChromBrowser" class="method navigator-link" hash-for-method="openUrl">openUrl</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Playwright_Automation.StartChromBrowser" class="method navigator-link" hash-for-method="scrolDown">scrolDown</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Playwright_Automation.StartChromBrowser" class="method navigator-link" hash-for-method="scroll">scroll</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Playwright_Automation.FindLocator" class="method navigator-link" hash-for-method="openUrl">openUrl</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -143,10 +147,110 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Playwright_Automation.FindLocator</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="alert">
+                  </a> <!-- alert -->
+                  <span class="method-name">alert</span>
+                  <div class="stack-trace">com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Error: Element is not an &lt;input&gt;, &lt;textarea&gt; or [contenteditable] element
+  name=&apos;Error
+  stack=&apos;Error: Error: Element is not an &lt;input&gt;, &lt;textarea&gt; or [contenteditable] element
+    at CRExecutionContext.evaluateWithArguments (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\javascript.js:242:12)
+    at async ElementHandle.evaluateInUtility (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:126:14)
+    at async C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:534:22
+    at async ElementHandle._retryAction (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:266:22)
+    at async ElementHandle._fill (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:531:12)
+    at async C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:525:22
+    at async ProgressController.run (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\progress.js:82:22)
+    at async ElementHandleDispatcher.fill (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dispatchers\elementHandlerDispatcher.js:142:12)
+}
+Call log:
+-   fill(&quot;Moin Khan&quot;)
+- attempting fill action
+-   waiting for element to be visible, enabled and editable
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.ElementHandleImpl.fillImpl(ElementHandleImpl.java:194)
+	at com.microsoft.playwright.impl.ElementHandleImpl.lambda$fill$10(ElementHandleImpl.java:185)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.ElementHandleImpl.fill(ElementHandleImpl.java:185)
+	at com.microsoft.playwright.ElementHandle.fill(ElementHandle.java:1612)
+	at Playwright_Automation.FindLocator.alert(FindLocator.java:136)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Error: Element is not an &lt;input&gt;, &lt;textarea&gt; or [contenteditable] element
+  name=&apos;Error
+  stack=&apos;Error: Error: Element is not an &lt;input&gt;, &lt;textarea&gt; or [contenteditable] element
+    at CRExecutionContext.evaluateWithArguments (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\javascript.js:242:12)
+    at async ElementHandle.evaluateInUtility (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:126:14)
+    at async C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:534:22
+    at async ElementHandle._retryAction (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:266:22)
+    at async ElementHandle._fill (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:531:12)
+    at async C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dom.js:525:22
+    at async ProgressController.run (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\progress.js:82:22)
+    at async ElementHandleDispatcher.fill (C:\Users\benny\AppData\Local\Temp\playwright-java-15395286297426707904\package\lib\server\dispatchers\elementHandlerDispatcher.js:142:12)
+}
+Call log:
+-   fill(&quot;Moin Khan&quot;)
+- attempting fill action
+-   waiting for element to be visible, enabled and editable
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 37 more
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Playwright_Automation.StartChromBrowser</span>
+              <span class="class-name">Playwright_Automation.FindLocator</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -158,9 +262,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getUrl">
-                  </a> <!-- getUrl -->
-                  <span class="method-name">getUrl</span>
+                  <a name="locator">
+                  </a> <!-- locator -->
+                  <span class="method-name">locator</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -177,26 +281,12 @@
                   <span class="method-name">openUrl</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="scrolDown">
-                  </a> <!-- scrolDown -->
-                  <span class="method-name">scrolDown</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="scroll">
-                  </a> <!-- scroll -->
-                  <span class="method-name">scroll</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\benny\AppData\Local\Temp\testng-eclipse--2104223414\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\benny\AppData\Local\Temp\testng-eclipse--371652055\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -205,7 +295,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Playwright_Automation.StartChromBrowser&quot;/&gt;
+      &lt;class name=&quot;Playwright_Automation.FindLocator&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -245,31 +335,27 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openUrl')
-data.setCell(0, 2, 'Playwright_Automation.StartChromBrowser')
-data.setCell(0, 3, 29098);
+data.setCell(0, 1, 'locator')
+data.setCell(0, 2, 'Playwright_Automation.FindLocator')
+data.setCell(0, 3, 61486);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'scroll')
-data.setCell(1, 2, 'Playwright_Automation.StartChromBrowser')
-data.setCell(1, 3, 15255);
+data.setCell(1, 1, 'login')
+data.setCell(1, 2, 'Playwright_Automation.FindLocator')
+data.setCell(1, 3, 26794);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'login')
-data.setCell(2, 2, 'Playwright_Automation.StartChromBrowser')
-data.setCell(2, 3, 10435);
+data.setCell(2, 1, 'alert')
+data.setCell(2, 2, 'Playwright_Automation.FindLocator')
+data.setCell(2, 3, 8200);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'scrolDown')
-data.setCell(3, 2, 'Playwright_Automation.StartChromBrowser')
-data.setCell(3, 3, 10024);
+data.setCell(3, 1, 'openUrl')
+data.setCell(3, 2, 'Playwright_Automation.FindLocator')
+data.setCell(3, 3, 6847);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'getTitle')
-data.setCell(4, 2, 'Playwright_Automation.StartChromBrowser')
-data.setCell(4, 3, 2018);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'getUrl')
-data.setCell(5, 2, 'Playwright_Automation.StartChromBrowser')
-data.setCell(5, 3, 2005);
+data.setCell(4, 2, 'Playwright_Automation.FindLocator')
+data.setCell(4, 3, 19);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -300,38 +386,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Playwright_Automation.StartChromBrowser</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Playwright_Automation.FindLocator</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">start</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">openUrl</span>
-                <span class="method-start">14383 ms</span>
+                <span class="method-start">12827 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getTitle</span>
-                <span class="method-start">43486 ms</span>
+                <span class="method-start">19705 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">getUrl</span>
-                <span class="method-start">45507 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">scroll</span>
-                <span class="method-start">47515 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">scrolDown</span>
-                <span class="method-start">62774 ms</span>
+                <span class="method-name">locator</span>
+                <span class="method-start">19728 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">72801 ms</span>
+                <span class="method-start">81221 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">alert</span>
+                <span class="method-start">108021 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">close</span>
-                <span class="method-start">83263 ms</span>
+                <span class="method-start">116354 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

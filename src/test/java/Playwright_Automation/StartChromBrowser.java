@@ -60,9 +60,10 @@ public class StartChromBrowser {
 	}
 	@Test(priority = 4)
 	public void scrolDown() throws InterruptedException {
-		String script= "window.scrollTo(0,document.body.scrollHeight)";
-		driver.evaluate(script);
+		String scriptButtom= "window.scrollTo(0,document.body.scrollHeight)";
+		driver.evaluate(scriptButtom);
 		Thread.sleep(5000);
+		
 		String scriptTop= "window.scrollTo(0,0)";
 		driver.evaluate(scriptTop);
 		Thread.sleep(5000);

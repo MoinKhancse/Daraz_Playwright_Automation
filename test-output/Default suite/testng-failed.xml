@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Playwright_Automation.StartChromBrowser">
+      <class name="Playwright_Automation.FindLocator">
         <methods>
-          <include name="openUrl"/>
           <include name="start"/>
+          <include name="alert"/>
           <include name="close"/>
         </methods>
-      </class> <!-- Playwright_Automation.StartChromBrowser -->
+      </class> <!-- Playwright_Automation.FindLocator -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
